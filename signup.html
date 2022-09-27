@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zeplin-login</title>
+    <link rel="icon" href="/assets/16x16.png">
+    <link rel="stylesheet" href="/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function validateform() {
+            var name = document.myform.email.value;
+            var Password = document.myform.Password.value;
+            if (name == null || name == "") {
+                alert("username can't be blank");
+                return false;
+            } else if (Password.length < 6) {
+                alert("Password must be 6 characters long");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+
+            <div class="col-sm-3">
+                <img src="/assets/onboarding-illustration-1.png" height="450px" class="img2">
+            </div>
+            <div class="col-sm-4">
+                <p class="header">Great to have you here!</p>
+                <span> You can login to access your workspace
+                </span><br><br><br>
+                <form name="myform" method="POST" action="frm.txt" onsubmit="return validateform()">
+                    <div class="btn-group">
+                        <button type="submit" class="btn2"><img src="/assets/download.jfif" height="25px"> login with
+                            figma</button>
+                        <button type="submit" class="btn3"><img src="/assets/OIP.jfif" height="25px"> login with
+                            google</button>
+                    </div>
+                    <br><br>
+                    <input type="email" placeholder="Work Email" class="form-control" name="name"><br>
+                    <!-- <p id="error1"></p> -->
+                    <input type="password" placeholder="password" class="form-control" name="password"><br>
+                    <!-- <p id="error2"></p> -->
+                    <p><input type="checkbox"> I agree to the terms and condition</p>
+                    <button class="btn1 btn-info">sign up for free</button>
+                    <br><br>
+                    <p>alreadt have an account? <a href="#">login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>

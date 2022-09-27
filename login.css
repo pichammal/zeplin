@@ -1,0 +1,41 @@
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid beige;
+}
+
+input {
+    border: none;
+    outline: 1px solid beige;
+}
+
+.input:focus {
+    background-color: cadetblue;
+}
+
+.btn1 {
+    width: 350px;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.btn2 {
+    background-color: black;
+    color: #fff;
+}
+
+.img2 {
+    margin-top: 50px;
+}
+
+.btn3 {
+    border: 1px solid beige;
+    box-shadow: 1px solid rgba(12, 12, 12, 0.87);
+}
